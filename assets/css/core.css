@@ -1,0 +1,129 @@
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+img,object{
+	display: block; 
+	border: 0; 
+	max-width: 100%; 
+	height: auto;  
+}
+html{
+	position: relative;
+	/*background:url('assets/img/files/bg.jpg')repeat;*/
+	/*background: #000 url('') no-repeat center center fixed;*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body{
+	overflow-x: hidden;
+	font-family:Arial;
+	color:#000;
+
+
+}
+.page-wrap{
+	max-width: 940px;
+	margin:0 auto;
+	padding: 20px 10px;
+	width: 100%;
+}
+/* HEADING STYLES */
+h1{
+	font-size: 2.8em;
+	line-height: 1.4em;
+}
+h2{
+	font-size: 2.2em;
+	line-height: 1.4em;
+}
+h3{
+	font-size: 1.8em;
+	line-height: 1.4em;
+	border-top: 1px solid #000;
+	border-bottom: 5px solid #000;
+}
+h4{
+	font-size: 1.4em;
+	line-height: 1.4em;
+}
+
+p{
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+   and (min-width : 768px) 
+   and (max-width : 1024px) {
+
+
+}
+
+/* iPads (landscape) ----------- */
+
+@media only screen 
+   and (min-width : 768px) 
+   and (max-width : 1024px) 
+   and (orientation : landscape) {
+
+
+}
+
+/* iPads (portrait) ----------- */
+
+@media only screen 
+   and (min-width : 768px) 
+   and (max-width : 1024px) 
+   and (orientation : portrait) {
+
+}
+
+@media screen and (max-width : 685px) {
+
+
+
+}
+
+/*Styles for screen 600px and lower*/
+
+@media screen and (max-width : 600px) {
+	
+
+}
+
+/*Styles for screen 515px and lower*/
+
+
+@media screen and (max-width : 568px) {
+
+
+	
+}
+
+/*Smartphone*/
+@media screen and (max-width : 380px){
+
+
+}
+@media screen and (max-width: 320px) {
+
+
+} 
+
+
+

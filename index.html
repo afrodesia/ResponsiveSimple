@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" id="home" class="homepage">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+
+<title></title>
+
+<!-- Stylesheets -->
+
+
+<link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/core.css" type="text/css" />
+
+<!-- Hugrid style -->
+<link rel="stylesheet" href="assets/css/hugrid.css" type="text/css" />
+
+<!-- Modenizer -->
+<script type="text/javascript" src="assets/js/modernizr.js"></script>
+
+</head>
+<body>
+<div class="page-wrap">
+<header>
+   <h1>Heading 1</h1>
+   <h2>Heading 2</h2>  
+</header>
+
+
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<!-- CUSTOM JS -->
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+<!-- RESPONSIVE HUGRID -->
+
+<script src="assets/js/hugrid.js"></script>
+<script type="text/javascript">
+	definegrid = function() {
+		var browserWidth = $(window).width(); 
+		if (browserWidth >= 1001) 
+		{
+            pageUnits = 'px';
+            colUnits = 'px';
+			pagewidth = 960;
+			columns = 6;
+			columnwidth = 140;
+			gutterwidth = 24;
+			pagetopmargin = 35;
+			rowheight = 20;
+			gridonload = 'off';
+			makehugrid();
+		} 
+		if (browserWidth <= 1000) 
+		{
+            pageUnits = '%';
+            colUnits = '%';
+			pagewidth = 94;
+			columns = 3;
+			columnwidth = 32;
+			gutterwidth = 2;
+			pagetopmargin = 35;
+			rowheight = 20;
+			gridonload = 'off';
+			makehugrid();
+		}
+		if (browserWidth <= 768) 
+		{
+            pageUnits = '%';
+            colUnits = '%';
+			pagewidth = 96;
+			columns = 2;
+			columnwidth = 49;
+			gutterwidth = 2;
+			pagetopmargin = 35;
+			rowheight = 20;
+			gridonload = 'off';
+			makehugrid();
+		}
+		if (browserWidth <= 320) 
+		{
+            pageUnits = '%';
+            colUnits = '%';
+			pagewidth = 96;
+			columns = 1;
+			columnwidth = 36;
+			gutterwidth = 2;
+			pagetopmargin = 35;
+			rowheight = 20;
+			gridonload = 'off';
+			makehugrid();
+		}
+	}
+    $(document).ready(function() {
+		definegrid();
+		setgridonload();
+    });    
+    
+    $(window).resize(function() {
+		definegrid();
+        setgridonresize();
+    });
+</script>
+
+
+</body>
+</html>
